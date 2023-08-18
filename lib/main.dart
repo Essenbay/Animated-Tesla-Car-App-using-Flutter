@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tesla_animated_app/screens/home_screen.dart';
+import 'package:tesla_animated_app/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tesla Animated App',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
+      theme: ThemeData.dark(),
+      home: HomeScreen(),
     );
   }
 }
